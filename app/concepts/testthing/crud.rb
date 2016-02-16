@@ -4,9 +4,10 @@ class Testthing < ActiveRecord::Base
     include Model
     model Testthing, :create
 
-    contract do
+    class Form < Reform::Form
       property :item, validates: {presence: true }
     end
+    contract Form
 
     def process(params)
       validate(params[:testthing])
