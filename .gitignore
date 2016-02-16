@@ -1,0 +1,8 @@
+*.un~
+*.swp
+.ruby-gemset
+.ruby-version
+.byebug_history
+/db
+/log
+/tmp
